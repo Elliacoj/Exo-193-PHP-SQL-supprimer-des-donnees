@@ -27,9 +27,15 @@ if($db->exec($sql) !== false) {
     echo "Données de la table bien supprimé";
 }*/
 
-$sql = "INSERT INTO user(nom, prenom, rue, numero, code_postal, ville, pays, mail) 
+/*$sql = "INSERT INTO user(nom, prenom, rue, numero, code_postal, ville, pays, mail)
         VALUES ('Jocaille', 'Amaury', 'ugiugri','64', '64654', 'Momignies', 'Belgique', 'dsfhuih@hotmail.com')";
 
 if($db->exec($sql) !== false) {
     echo "Nouvelle utilisateur bien enregistré";
+}*/
+
+$sql = "DROP TABLE user";
+
+if($db->exec($sql) !== false) {
+    echo "Table bien supprimé";
 }
