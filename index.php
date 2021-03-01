@@ -34,8 +34,14 @@ if($db->exec($sql) !== false) {
     echo "Nouvelle utilisateur bien enregistré";
 }*/
 
-$sql = "DROP TABLE user";
+/*$sql = "DROP TABLE user";
 
 if($db->exec($sql) !== false) {
     echo "Table bien supprimé";
+}*/
+
+$sql = "DROP DATABASE exo193";
+
+if($db->exec($sql) !== false) {
+    echo "Base de données bien supprimé";
 }
