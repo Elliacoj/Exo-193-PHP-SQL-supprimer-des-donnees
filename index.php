@@ -15,8 +15,14 @@ require "./Classes/DB.php";
 
 $db = DB::getInstance();
 
-$sql = "DELETE FROM user WHERE id = 4";
+/*$sql = "DELETE FROM user WHERE id = 4";
 
 if($db->exec($sql) !== false) {
     echo "Donnée bien supprimé";
+}*/
+
+$sql = "TRUNCATE TABLE user";
+
+if($db->exec($sql) !== false) {
+    echo "Données de la table bien supprimé";
 }
