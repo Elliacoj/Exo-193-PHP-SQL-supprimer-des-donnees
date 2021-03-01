@@ -21,8 +21,15 @@ if($db->exec($sql) !== false) {
     echo "Donnée bien supprimé";
 }*/
 
-$sql = "TRUNCATE TABLE user";
+/*$sql = "TRUNCATE TABLE user";
 
 if($db->exec($sql) !== false) {
     echo "Données de la table bien supprimé";
+}*/
+
+$sql = "INSERT INTO user(nom, prenom, rue, numero, code_postal, ville, pays, mail) 
+        VALUES ('Jocaille', 'Amaury', 'ugiugri','64', '64654', 'Momignies', 'Belgique', 'dsfhuih@hotmail.com')";
+
+if($db->exec($sql) !== false) {
+    echo "Nouvelle utilisateur bien enregistré";
 }
